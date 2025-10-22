@@ -38,7 +38,6 @@ ThemeData lightTheme = ThemeData(
   ),
 );
 
-// **الثيم الليلي**
 ThemeData darkTheme = ThemeData(
   brightness: Brightness.dark,
   primaryColor: AppColors.primary,
