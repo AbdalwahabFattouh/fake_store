@@ -21,7 +21,7 @@ class CartCard extends StatelessWidget {
           Navigator.of(context).push(
             MaterialPageRoute(
               builder: (context) => BlocProvider.value(
-                value: cartBloc, // استخدم المتغير بدلاً من context.read مباشرة
+                value: cartBloc,
                 child: CartDetails(cart: item),
               ),
             ),

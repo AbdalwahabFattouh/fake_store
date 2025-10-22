@@ -18,8 +18,6 @@ class ProductGrid extends StatelessWidget {
       itemCount: products.length,
       itemBuilder: (context, index) {
         final product = products[index];
-
-        // كل عنصر سيظهر مع تأخير بسيط
         return TweenAnimationBuilder<double>(
           tween: Tween(begin: 0, end: 1),
           duration: Duration(milliseconds: 300 + index * 100),
@@ -27,7 +25,7 @@ class ProductGrid extends StatelessWidget {
             return Opacity(
               opacity: value,
               child: Transform.translate(
-                offset: Offset(0, 50 * (1 - value)), // حركة من الأسفل للأعلى
+                offset: Offset(0, 50 * (1 - value)),
                 child: child,
               ),
             );

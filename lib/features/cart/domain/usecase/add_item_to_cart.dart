@@ -10,9 +10,8 @@ class AddItemToCart {
     try {
       await repository.addItemToCart(userId, newItem);
     } catch (e) {
-      // يمكنك إضافة تحسينات إضافية هنا
       print('Error in AddItemToCart UseCase: $e');
-      rethrow; // أو throw CustomException('Failed to add item to cart');
+      rethrow;
     }
   }
 }

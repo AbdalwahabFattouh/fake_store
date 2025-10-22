@@ -20,7 +20,6 @@ class SplashPage extends StatelessWidget {
         ),
         child: Stack(
           children: [
-            // خلفية متحركة من الدوائر
             Positioned(
               top: -50,
               right: -30,
@@ -45,13 +44,10 @@ class SplashPage extends StatelessWidget {
                 ),
               ),
             ),
-
-            // المحتوى الرئيسي
             Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  // أيقونة متحركة مع ظل
                   Container(
                     width: 120,
                     height: 120,
@@ -75,7 +71,6 @@ class SplashPage extends StatelessWidget {
 
                   const SizedBox(height: 40),
 
-                  // العنوان مع أنيميشن
                   const Column(
                     children: [
                       Text(
@@ -101,8 +96,6 @@ class SplashPage extends StatelessWidget {
                   ),
 
                   const SizedBox(height: 60),
-
-                  // شريط التقدم المخصص
                   Container(
                     width: 200,
                     height: 4,
@@ -112,7 +105,6 @@ class SplashPage extends StatelessWidget {
                     ),
                     child: Stack(
                       children: [
-                        // شريط التقدم المتحرك
                         AnimatedContainer(
                           duration: const Duration(seconds: 3),
                           width: 200,
@@ -134,8 +126,6 @@ class SplashPage extends StatelessWidget {
                   ),
 
                   const SizedBox(height: 30),
-
-                  // النص التحتي
                   const Text(
                     'Loading...',
                     style: TextStyle(

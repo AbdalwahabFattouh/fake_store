@@ -85,7 +85,6 @@ class LocatCartDataSource implements LocalCartDataSource {
             .findFirst();
 
         if (activeCart != null) {
-          // إنشاء قائمة جديدة وإضافة العناصر القديمة + الجديد
           final updatedProducts = List<CartItemModel>.from(activeCart.products);
           updatedProducts.add(newItem);
 

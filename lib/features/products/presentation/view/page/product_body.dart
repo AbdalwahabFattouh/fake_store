@@ -35,8 +35,8 @@ class _ProductBodyState extends State<ProductBody> {
             return const Center(child: CircularProgressIndicator());
           case BlocStatus.loading:
             return const AdvancedLoadingScreen(
-              title: "جاري التحميل",
-              subtitle: "يرجى الانتظار قليلاً",
+              title: "Loading",
+              subtitle: "Please wait a moment",
               type: LoadingType.dots,
               primaryColor: Colors.blue,
               secondaryColor: Colors.purple,

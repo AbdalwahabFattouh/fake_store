@@ -24,14 +24,12 @@ class ProductBloc extends Bloc<ProductEvent, ProductState> {
     final query = state.searchController.text.toLowerCase();
     List<ProductModel> filtered = state.products;
 
-    // فلترة حسب الفئة
     if (event.category != null && event.category!.isNotEmpty) {
       filtered = filtered
           .where((p) => p.category.toLowerCase() == event.category!.toLowerCase())
           .toList();
     }
 
-    // فلترة حسب السعر
     if (event.minPrice != null) {
       filtered = filtered.where((p) => p.price >= event.minPrice!).toList();
     }
@@ -39,7 +37,6 @@ class ProductBloc extends Bloc<ProductEvent, ProductState> {
       filtered = filtered.where((p) => p.price <= event.maxPrice!).toList();
     }
 
-    // فلترة حسب البحث
     if (query.isNotEmpty) {
       filtered = filtered
           .where((p) => p.title.toLowerCase().contains(query))

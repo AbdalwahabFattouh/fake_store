@@ -23,7 +23,6 @@ class AnimatedCartItem extends StatelessWidget {
       curve: Curves.easeOutCubic,
       tween: Tween<double>(begin: 0.0, end: 1.0),
       builder: (context, value, child) {
-        // تأكد من أن القيمة بين 0.0 و 1.0
         final clampedValue = value.clamp(0.0, 1.0);
         final opacityValue = clampedValue.toDouble();
 
