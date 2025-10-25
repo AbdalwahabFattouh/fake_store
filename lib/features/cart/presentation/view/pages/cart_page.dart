@@ -14,9 +14,6 @@ class CartsPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Carts'),
-        backgroundColor: AppColors.primary,
-        foregroundColor: Colors.white,
-        elevation: 0,
       ),
       body: BlocBuilder<CartBloc, CartState>(
         builder: (context, state) {

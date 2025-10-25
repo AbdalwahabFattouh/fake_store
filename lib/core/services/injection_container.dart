@@ -43,6 +43,7 @@ Future<void> init() async {
   sl.registerLazySingleton(() => localStorage);
 
   sl.registerLazySingleton(() => ApiClient());
+
   sl.registerLazySingleton<IsarDBHelper>(() => IsarDBHelper.instance);
 
   // Data Sources

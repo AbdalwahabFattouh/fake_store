@@ -2,6 +2,11 @@
 
 A modern Flutter e-commerce application built with clean architecture, featuring user authentication, product browsing, cart management, and profile handling. This app demonstrates best practices in Flutter development using BLoC for state management, dependency injection, and local data persistence.
 
+# App UI
+![App Screenshot](UI/cover.jpg)
+![App Screenshot](UI/Scene_15.png)
+![App Screenshot](UI/Scene_16.png)
+
 ## Features
 
 ### 🔐 Authentication
